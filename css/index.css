@@ -215,6 +215,14 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0.7em;
+    padding: 0.7em;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
