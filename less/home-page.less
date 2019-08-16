@@ -3,7 +3,7 @@
 .home {
 
   .intro {
-
+// gave the font size an em of 1.8 for me @media @mobile
     h2 {
       padding: 15px;
       @media @phone {
@@ -53,7 +53,7 @@
 
   .visit-planets {
     padding: 15px;
-
+// gave the font size an em of 1.8 for me @media @mobile
     h3 {
       margin-top: 11px;
       @media @phone {
@@ -93,10 +93,13 @@
       flex-direction: column-reverse;
       padding: 1em;
     }
-
+// changed the width to 100% on mobile view
     .walk-text {
       width: 50%;
-
+      @media @phone {
+        width: 100%;
+      }
+// gave the font size an em of 1.8 for me @media @mobile
       h3 {
         margin-bottom: 10px;
         @media @phone {
