@@ -2,19 +2,13 @@
 
 .home {
 
-  .walk{
-    @media @phone {
-    display: flex;
-    flex-direction: column-reverse;
-    margin: 0.7em;
-    padding: 0.7em;
-  }
-  }
-
   .intro {
 
     h2 {
       padding: 15px;
+      @media @phone {
+        font-size: 1.8em
+      }
     }
 
     p {
@@ -27,7 +21,8 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-// gave the media query under space images padding of 20px each as they were touching 
+
+    // gave the media query under space images padding of 20px each as they were touching 
     @media @phone {
       padding-left: 20px;
       padding-right: 20px;
@@ -38,19 +33,20 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-      
+
 
       @media @phone {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
         width: 100%;
+        margin: auto;
       }
     }
+
     // decided to hide the two images here
-    .sky, .launch{
-      @media @phone{
-        display:none;
+    .sky,
+    .launch {
+      @media @phone {
+        display: none;
       }
     }
   }
@@ -60,16 +56,21 @@
 
     h3 {
       margin-top: 11px;
+      @media @phone {
+        font-size: 1.8em
+      }
     }
 
     p {
       margin-top: 13px;
     }
-// used the display none feature for the image i duplicated in the html
+
+    // used the display none feature for the image i duplicated in the html
     img {
       border-radius: 20px;
       display: none;
-// decided to display the image in the mobile view
+
+      // decided to display the image in the mobile view
       @media @phone {
         display: block;
         width: 100%;
@@ -87,11 +88,20 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 1em;
+    }
+
     .walk-text {
       width: 50%;
 
       h3 {
         margin-bottom: 10px;
+        @media @phone {
+          font-size: 1.8em
+        }
       }
 
       p {
@@ -104,6 +114,11 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin: auto;
+      }
 
       img {
         width: 100%;
