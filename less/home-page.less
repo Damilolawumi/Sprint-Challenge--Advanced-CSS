@@ -29,12 +29,19 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      
 
       @media @phone {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+      }
+    }
+    // decided to hide the two images here
+    .sky, .launch{
+      @media @phone{
+        display:none;
       }
     }
   }
@@ -48,6 +55,19 @@
 
     p {
       margin-top: 13px;
+    }
+// used the display none feature for the image i duplicated in the html
+    img {
+      border-radius: 20px;
+      display: none;
+// decided to display the image in the mobile view
+      @media @phone {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+      }
     }
   }
 
