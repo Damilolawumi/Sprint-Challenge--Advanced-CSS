@@ -8,6 +8,12 @@
   border-radius: 0.625em;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .btn {
+    border-radius: 0.3125em;
+    width: auto;
+  }
+}
 .btn:hover {
   background-color: #F6F6F6;
   color: #22283A;
